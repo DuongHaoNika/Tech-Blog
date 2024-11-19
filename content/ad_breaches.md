@@ -1,3 +1,16 @@
+---
+title: "Active Directory Breaches"
+date: "2024-11-19"
+excerpt: "Active Directory Breaches."
+featured: "/images/test3.jpg"
+---
+
+# Markdown Test
+
+This document includes **all common Markdown features** to test the rendering system.
+
+---
+
 ## Introduction to AD Breaches
 ---
 Active Directory (AD) được sử dụng bởi 90% các công ty trong danh sách Global Fortune 1000. Vì AD được sử dụng để xác thực danh tính và quản lý truy cập => hay là mục tiêu bị tấn công
