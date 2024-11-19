@@ -11,14 +11,16 @@
     },
     "dependencies": {
         "gray-matter": "latest",
-        "next": "latest",
+        "next": "^15.0.3",
         "prism-react-renderer": "^2.4.0",
         "react": "latest",
         "react-dom": "latest",
-        "rehype-katex": "latest",
-        "rehype-stringify": "latest",
-        "remark": "latest",
-        "remark-gfm": "latest",
+        "rehype": "^13.0.2",
+        "rehype-katex": "^7.0.1",
+        "rehype-stringify": "^10.0.1",
+        "remark": "^15.0.1",
+        "remark-emoji": "^5.0.1",
+        "remark-gfm": "^4.0.0",
         "remark-html": "latest",
         "remark-math": "latest",
         "remark-rehype": "latest",
@@ -38,6 +40,6 @@
         "typescript": "latest"
     },
     "engines": {
-        "node": "18.x"
+        "node": "20.x"
     }
 }
