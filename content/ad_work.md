@@ -2,13 +2,7 @@
 title: "How Active Directory work?"
 date: "2024-11-19"
 excerpt: "Active Directory work"
-featured: "/images/test3.jpg"
----
-
-# Markdown Test
-
-This document includes **all common Markdown features** to test the rendering system.
-
+featured: "/images/ad.jpg"
 ---
 
 # Kerberos - Cách Kerberos hoạt động?

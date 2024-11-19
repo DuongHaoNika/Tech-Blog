@@ -42,7 +42,7 @@ export default function Home({ posts, currentPage, totalPages }: HomeProps) {
     <Layout title="Home">
       <div className="max-w-4xl mx-auto">
         <section className="mb-16">
-          <h1 className="text-4xl font-bold mb-4 dark:text-white">Welcome to sondt&apos;s Blog</h1>
+          <h1 className="text-4xl font-bold mb-4 dark:text-white">Welcome to HaoDQ&apos;s Blog</h1>
           <p className="text-xl text-gray-600 dark:text-gray-100">
             Something about infosec!...
           </p>

@@ -2,13 +2,7 @@
 title: "Mimikatz"
 date: "2024-11-19"
 excerpt: "Mimikatz cheatsheet ;>"
-featured: "/images/test3.jpg"
----
-
-# Markdown Test
-
-This document includes **all common Markdown features** to test the rendering system.
-
+featured: "/images/ad_attack.jpg"
 ---
 
 ## Mimikatz
