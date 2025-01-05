@@ -5,7 +5,7 @@ excerpt: "Write up Cyradar CTF TTS/CTV [WEB]"
 featured: "/images/cyradar_logo.svg"
 ---
 
-# Bài 1: SSTI
+## Bài 1: SSTI
 
 Khi mở web lên có giao diện như sau:
 
@@ -39,7 +39,7 @@ Phát hiện có flag.txt
 Flag: `Hello CyWeb{w3b_3asy_sst1}!`
 
 
-# Bài 2: SQL Injection
+## Bài 2: SQL Injection
 
 Bài 2 có giao diện như sau:
 
@@ -91,7 +91,7 @@ Sau đó liệt kê thư mục gốc:
 
 Flag: `CyWeb{ThiS_i5_m3d!um5q1!r(3}`
 
-# Bài 3: SSTI
+## Bài 3: SSTI
 
 ![image](https://hackmd.io/_uploads/HyF5bfOIJl.png)
 
@@ -119,7 +119,7 @@ Và chèn payload sau: `{{ self._TemplateReference__context.cycler.__init__.__gl
 
 Flag: `CyWeb{m3d!umsst!}`
 
-# Bài 4: SQL Injection
+## Bài 4: SQL Injection
 
 ![image](https://hackmd.io/_uploads/S1j8Xf_8kl.png)
 
