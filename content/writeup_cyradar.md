@@ -1,7 +1,7 @@
 ---
-title: "Write up Cyradar CTF TTS/CTV [WEB]"
+title: "Writeup Cyradar CTF TTS/CTV [WEB]"
 date: "2025-01-05"
-excerpt: "Write up Cyradar CTF TTS/CTV [WEB]"
+excerpt: "Writeup Cyradar CTF TTS/CTV [WEB]"
 featured: "/images/cyradar_logo.svg"
 ---
 
