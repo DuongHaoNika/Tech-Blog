@@ -5,7 +5,7 @@ lastUpdated: "2025-01-26"
 
 ## Information
 
-![image](/public/images/hao.jpg)
+![image](/images/hao.jpg)
 
 __Name__: Duong Quang Hao
 
