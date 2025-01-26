@@ -1,7 +1,7 @@
 ---
 title: "Writeup VCS Passpost 2024 [WEB]"
 date: "2025-01-16"
-excerpt: "Writeup VCS Passpost 2024 [WEB]"
+excerpt: "Challenges: https://github.com/DuongHaoNika/VCS_Passport_2024_Web"
 featured: "/images/viettel.jpg"
 ---
 
