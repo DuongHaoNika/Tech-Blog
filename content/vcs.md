@@ -97,7 +97,10 @@ Qua Burp Suite
 
 ![image](https://github.com/user-attachments/assets/45623108-09a2-4dd9-a0ec-c348ae27e682)
 
-Sửa `title` => `aaaaaaaa", "../../../../../../../proc/self/environ") --`
+Sửa `title` thành 
+```
+aaaaaaaa", "../../../../../../../proc/self/environ") --
+```
 
 ![image](https://github.com/user-attachments/assets/e564fe87-8482-48f5-a650-c484860ad4c4)
 
