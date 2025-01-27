@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-lastUpdated: "2025-01-26"
+lastUpdated: "2025-01-27"
 ---
 
 ## Information
@@ -14,6 +14,8 @@ __Major__: Information Security
 __University__: Posts and Telecommunications Institute of Technology
 
 __Facebook__: [Dương Quang Hào](https://www.facebook.com/haonika/)
+
+__Linkedin__: [Dương Quang Hào](https://www.linkedin.com/in/d%C6%B0%C6%A1ng-quang-h%C3%A0o-93b942274/)
 
 __Github__: [DuongHaoNika](https://github.com/DuongHaoNika)
 
