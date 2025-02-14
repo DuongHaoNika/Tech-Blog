@@ -1,6 +1,6 @@
 ---
 title: "Report bug subdomain live-api.hocmai.vn"
-date: "2024-11-12"
+date: "2025-01-01"
 excerpt: "By Duong Quang Hao, Dinh Thai Son"
 featured: "/images/hocmai.png"
 ---
