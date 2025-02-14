@@ -99,7 +99,7 @@ __Khai thác Kernel__
 
 ### Sudo
 
-Lệnh __sudo__ cho phepsp người dùng chạy chương trình với quyền __root__. Trong 1 số trường hợp, admin có thể cho người dùng quyền __root__ khi thực hiện công việc gì đó. 
+Lệnh __sudo__ cho phép người dùng chạy chương trình với quyền __root__. Trong 1 số trường hợp, admin có thể cho người dùng quyền __root__ khi thực hiện công việc gì đó. 
 
 `sudo -l`: Hệ thống mục tiêu được cấu hình để cho phép người dùng chạy 1 vài (hoặc tất cả) các lệnh với quyền __root__ => List các command có thể được user chạy với quyền __root__
 
@@ -158,4 +158,6 @@ sudo LD_PRELOAD=/home/user/ldpreload/shell.so find
 Result
 
 ![image](https://i.imgur.com/1YwARyZ.png)
+
+### SUID
 
