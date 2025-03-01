@@ -1,5 +1,5 @@
 ---
-title: "Linux Privilege Escalation"
+title: "HTTP Request Smuggling"
 date: "2025-03-01"
 excerpt: "HTTP Request Smuggling - Tryhackme"
 featured: "/images/http_req_smug.png"
