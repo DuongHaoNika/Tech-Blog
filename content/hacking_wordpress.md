@@ -2,7 +2,7 @@
 title: "Hacking WordPress"
 date: "2025-03-25"
 excerpt: "Hacking WordPress - Hackthebox"
-featured: "/images/wordpress_hacking.jpeg"
+featured: "/images/wordpress_hacking.jpg"
 ---
 
 # Introduction
